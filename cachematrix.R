@@ -9,10 +9,10 @@
 # 3. set the value of the inverse matrix
 # 4. get the value of the inverse matrix
 makeCacheMatrix <- function(x = matrix()) {
-    m <- NULL
+    invMatrix <- NULL
     set <- function(y) {
         x <<- y
-        m <<- NULL
+        invMatrix <<- NULL
     }
     get <- function() x
     setInverse <- function(inverse) invMatrix <<- inverse
